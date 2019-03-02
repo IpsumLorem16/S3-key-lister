@@ -1,5 +1,5 @@
 # S3-key-lister
-List all keys in any public Amazon s3 bucket, option to check if each object is public or private, and save as a .csv file
+List all keys in any public Amazon s3 bucket, option to check if each object is public or private. Saves result as a .csv file
 
 
 <p align="center">
