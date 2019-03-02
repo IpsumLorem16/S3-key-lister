@@ -1,6 +1,7 @@
 # S3-key-lister
 List all keys in any public AWS s3 bucket, option to check if each object is public or private, and save as a .csv file
 
+![Example of running in terminal](https://raw.githubusercontent.com/IpsumLorem16/S3-key-lister/master/s3getkeys-acl-v-orig.gif)
 ## Notes: 
 - Still a work in progress, works very well but not all options have been added yet.  
 - Made on linux for linux, might have bugs when running on windows, and printed text in the terminal..formatting will probably be screwed up.  
