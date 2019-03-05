@@ -53,7 +53,7 @@ or
 ```
 $ python2 s3getkeys.py -t ryft-public-sample-data --key esRedditJson/esRedditJson9 --estimate
 ```
-This is especially useful if you previously used ctrl+c and want to continue from the last key found. be careful, If you use the same filename it *will* overwrite *not* append it. 
+This is especially useful if you previously used ctrl+c and want to continue from the last key found. Be careful, If you use the same filename it *will* overwrite *not* append it. 
 
 ## Notes: 
 - Working, but still a work in progress. 
