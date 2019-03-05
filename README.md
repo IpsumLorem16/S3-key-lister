@@ -24,7 +24,7 @@ Options:
 -v                    verbose, print keys 
 --acl                 check if each key is public can take long time in large buckets  
 -o, --output <file>   name of output file, do not include .csv[default:bucket]  
---estimate            estimate how long to run, filesize with [-r][--acl]  
+--estimate            estimate how long to run [-r][--acl]  
 -h,--help             show this help info  
 ```
 ### Examples:
