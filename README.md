@@ -1,10 +1,11 @@
 # S3-key-lister
 List all keys in any public Amazon s3 bucket, option to check if each object is public or private. Saves result as a .csv file
 
-
 <p align="center">
   <img width="645" height="410" src="https://raw.githubusercontent.com/IpsumLorem16/S3-key-lister/master/s3getkeys-acl-v-orig.gif">
 </p>
+
+- Requires [Boto3](https://github.com/boto/boto3) `$ pip install boto3`
 
 ## Usage:
 ```
