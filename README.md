@@ -6,6 +6,8 @@ List all keys in any public Amazon s3 bucket, option to check if each object is 
 </p>
 
 - Requires [Boto3](https://github.com/boto/boto3) `$ pip install boto3`
+- Uses python 2.7
+- No need for access keys, authentication or anything, runs 'anonymously'
 
 ## Usage:
 ```
