@@ -66,6 +66,6 @@ This is especially useful if you previously used ctrl+c and want to continue fro
 - [ ] add warning, `file already exists. overwrite? y/n`
 - [ ] add `--continue` | `--append` option to start up where we left off
 - [ ] add option to not include header in saved csv file
-- [ ] add `--include`|`--exclude` option to only fetch keys that include/exclude this text
-- [ ] add `--files`|`--exclude_files` to only include/exclude these file extensions
+- [ ] add `--include` | `--exclude` option to only fetch keys that include/exclude this text
+- [ ] add `--files` | `--exclude_files` to only include/exclude these file extensions
 
