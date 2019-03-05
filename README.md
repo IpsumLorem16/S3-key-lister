@@ -51,4 +51,4 @@ This is a very rough estimate, the actual the total time would depend on a lot o
 
 ### TODO:
 - [ ] add `--prefix` and `--delimiter` options 
-- [ ] add warning, `file already exists overwrite y/n`
+- [ ] add warning, `file already exists. overwrite? y/n`
