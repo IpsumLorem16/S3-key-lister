@@ -44,6 +44,17 @@ Prints time in seconds, as well as number of keys, and average time for 20 head_
 
 This is a very rough estimate, the actual the total time would depend on a lot of factors. use as a guide only.
 
+#### Start from a particular key
+You can start from any point in the bucket using the `--key` option:
+```
+$ python2 s3getkeys.py -t ryft-public-sample-data --key esRedditJson/esRedditJson9 --acl -r -o ryft
+```
+or
+```
+$ python2 s3getkeys.py -t ryft-public-sample-data --key esRedditJson/esRedditJson9 --estimate
+```
+This is especially useful if you previously used ctrl+c and want to continue from the last key found. be careful, If you use the same filename it *will* overwrite *not* append it. 
+
 ## Notes: 
 - Working, but still a work in progress. 
 - Made on linux for linux, might have bugs when running on windows, and printed text in the terminal..formatting will probably be a little screwed up.  
@@ -52,3 +63,5 @@ This is a very rough estimate, the actual the total time would depend on a lot o
 ### TODO:
 - [ ] add `--prefix` and `--delimiter` options 
 - [ ] add warning, `file already exists. overwrite? y/n`
+- [ ] add `--continue` | `--append` option to start up where we left off
+- [ ] add option to not include header in saved csv file
