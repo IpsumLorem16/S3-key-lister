@@ -56,10 +56,9 @@ $ python2 s3getkeys.py -t ryft-public-sample-data --key esRedditJson/esRedditJso
 This is especially useful if you previously used ctrl+c and want to continue from the last key found. Be careful, If you use the same filename it *will* overwrite *not* append it. 
 
 ## Notes: 
-- `--acl` option adds a lot of overhead, since it will query every individual object in the bucket to get the info. This can be hundreds of thousands of extra requests.
 - Working, but still a work in progress. 
 - Made on linux for linux, might have bugs when running on windows, and printed text in the terminal..formatting will probably be a little screwed up.  
-- Large buckets with hundreds of thousands of keys can take a long time to go over with `--acl`, this is something that will be improved on v2. use `--estimate` option for a rough estimate on how long it will take.
+- Large buckets with hundreds of thousands of keys can take a long time to go over with `--acl`, since it will query every individual object in the bucket to get the info. This is something that will be improved on v2. use `--estimate` option for a rough estimate on how long it will take.
 
 ### TODO:
 - [ ] add `--prefix` and `--delimiter` options 
