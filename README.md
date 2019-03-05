@@ -28,7 +28,7 @@ Options:
 -h,--help             show this help info  
 ```
 ### Examples:
-Fetch *all* keys from the public bucket; https://s3.amazonaws.com/ryft-public-sample-data , check which keys are public, and save it to a file called '[ryft.csv](S3-key-lister/examples/ryft.csv)' :
+Fetch *all* keys from the public bucket; https://s3.amazonaws.com/ryft-public-sample-data , check which keys are public, and save it to a file called '[ryft.csv](/examples/ryft.csv)' :
 ```
 $ python2 s3getkeys.py -t ryft-public-sample-data --acl -r -o ryft
 ```
