@@ -58,7 +58,7 @@ This is especially useful if you previously used ctrl+c and want to continue fro
 ## Notes: 
 - Working, but still a work in progress. 
 - Made on linux for linux, might have bugs when running on windows, and printed text in the terminal..formatting will probably be a little screwed up.  
-- Large buckets with hundreds of thousands of keys can take a long time to go over with `--acl`, since it will query every individual object in the bucket to get the info. This is something that will be improved on v2. use `--estimate` option for a rough estimate on how long it will take.
+- Large buckets with hundreds of thousands of keys can take a long time to go over with `--acl`, since it will query every individual object in the bucket to get the info. This is something that will be improved on v2. Use `--estimate` option for a rough estimate
 
 ### TODO:
 - [ ] add `--prefix` and `--delimiter` options 
