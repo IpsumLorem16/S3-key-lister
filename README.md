@@ -28,13 +28,15 @@ Options:
 -h,--help             show this help info  
 ```
 ### Examples:
+
+#### Fetch all keys
 Fetch *all* keys from the public bucket; https://s3.amazonaws.com/ryft-public-sample-data , check which keys are public, and save it to a file called '[ryft.csv](/examples/ryft.csv)' :
 ```
 $ python2 s3getkeys.py -t ryft-public-sample-data --acl -r -o ryft
 ```
 You can ctrl+c to stop the script at any time if you need to, and your .csv file should have everything saved up to that point.
-
-For larger buckets, it can take a while to run, get an estimated time on how long it will take `-r` with `--acl` options enabled :
+#### Get estimated query time
+For larger buckets, it can take a while to run, get an estimated time on how long it might take with `-r` `--acl` options enabled :
 ```
 $ python2 s3getkeys.py -t ryft-public-sample-data --estimate
 ```
