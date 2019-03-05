@@ -32,11 +32,13 @@ Fetch *all* keys from the public bucket; https://s3.amazonaws.com/ryft-public-sa
 ```
 $ python2 s3getkeys.py -t ryft-public-sample-data --acl -r -o ryft
 ```
+You can ctrl+c to stop the script at any time if you need to, and your .csv file should have everything saved up to that point.
+
 For larger buckets, it can take a while to run, get an estimated time on how long it will take `-r` with `--acl` options enabled :
 ```
 $ python2 s3getkeys.py -t ryft-public-sample-data --estimate
 ```
-Prints time in seconds, as well as number of keys, and avergage time of 20 head_object requests (what we use to determine if a key is public or private). If you know how many objects are in a bucket you can just wait for the average time, ctrl+c to stop, and then multiply this by the number of object for a rought estimate. 
+Prints time in seconds, as well as number of keys, and avergage time of 20 head_object requests (what we use to determine if a key is public or private). If you know how many objects are in a bucket you can just wait for the average time, ctrl+c to stop, and then multiply this by the number of objects for a rought estimate. 
 
 This is a very rough estimate, the actual the total time would depend on a lot of factors. use as a guide only.
 
