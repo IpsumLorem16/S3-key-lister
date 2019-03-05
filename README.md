@@ -8,7 +8,8 @@ List all keys in any public Amazon s3 bucket, option to check if each object is 
 - Requires [Boto3](https://github.com/boto/boto3) `$ pip install boto3`
 - Uses python 2.7
 - No need for access keys, authentication or anything, runs 'anonymously'
-- Saves key name, file size in bytes, date last modified, and 'public'|'private'|'unknown' in .csv
+- Saves key name, file size in bytes, date last modified, and 'public'|'private'|'unknown' in .csv [example]()
+- Prints progress to command line while running, number of keys, num of public keys, and run time 
 
 ## Usage:
 ```
@@ -26,14 +27,16 @@ Options:
 --estimate            estimate how long to run, filesize with [-r][--acl]  
 -h,--help             show this help info  
 ```
-## Examples:
-Fetch *all* keys from the public bucket; https://s3.amazonaws.com/ryft-public-sample-data , check which keys are public, and save it to a file called 'ryft.csv' :
+### Examples:
+Fetch *all* keys from the public bucket; https://s3.amazonaws.com/ryft-public-sample-data , check which keys are public, and save it to a file called ['ryft.csv']() :
 ```
-python2 s3getkeys.py -t ryft-public-sample-data --acl -r -o ryft
+$ python2 s3getkeys.py -t ryft-public-sample-data --acl -r -o ryft
 ```
 ## Notes: 
 - Working, but still a work in progress. 
 - Made on linux for linux, might have bugs when running on windows, and printed text in the terminal..formatting will probably be a little screwed up.  
 - Large buckets with hundreds of thousands of keys can take a long time to go over with --acl, this is something that will be improved on v2.  
 
+### TODO:
+- [ ] add `--prefix` and `--delimiter` options 
 
