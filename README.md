@@ -40,14 +40,14 @@ For larger buckets, it can take a while to run, get an estimated time on how lon
 ```
 $ python2 s3getkeys.py -t ryft-public-sample-data --estimate
 ```
-Prints time in seconds, as well as number of keys, and avergage time of 20 head_object requests (what we use to determine if a key is public or private). If you know how many objects are in a bucket you can just wait for the average time, ctrl+c to stop, and then multiply this by the number of objects for a rought estimate. 
+Prints time in seconds, as well as number of keys, and average time for 20 head_object requests (what we use to determine if a key is public or private). If you know how many objects are in a bucket you can just wait for the average time, ctrl+c to stop, and then multiply this by the number of objects for the same result. 
 
 This is a very rough estimate, the actual the total time would depend on a lot of factors. use as a guide only.
 
 ## Notes: 
 - Working, but still a work in progress. 
 - Made on linux for linux, might have bugs when running on windows, and printed text in the terminal..formatting will probably be a little screwed up.  
-- Large buckets with hundreds of thousands of keys can take a long time to go over with --acl, this is something that will be improved on v2. use `--estimate` option for a rough estimate on how long it will take.
+- Large buckets with hundreds of thousands of keys can take a long time to go over with `--acl`, this is something that will be improved on v2. use `--estimate` option for a rough estimate on how long it will take.
 
 ### TODO:
 - [ ] add `--prefix` and `--delimiter` options 
